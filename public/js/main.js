@@ -22,10 +22,18 @@ var cambia = function(){
     btnContinuar.addEventListener("click",metodoGet)
 }
 var metodoGet = function(){
-    var phoneNumeber =parseInt(document.getElementById("numeroTelefonico").value;)
+    var ruta="http://localhost:3000/api/registerNumber"
+    var phoneNumeber =document.getElementById("numeroTelefonico").value
+    $.post(ruta,{
+        "phone":phoneNumeber,
+        "terms":true
+    },function (response){
+        console.log(response);
+    })
     
-    console.log(typeof(phoneNumeber));
-    console.log("Funcion en servicio")
+}
+var getSuccess = function(res){
+    console.log(res);
 }
 var valida = function (){
     contador++;
