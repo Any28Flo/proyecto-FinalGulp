@@ -1,0 +1,39 @@
+
+
+$altoCarusel : 60vh;
+$altoImagen:4vh;
+
+
+$altoBoton :10vh;
+$anchoBoton:4vh;
+$colorBoton: #ffcc00;
+
+
+
+.carusel{
+    height: $altoCarusel;
+    .carousel{
+        overflow: visible;
+        height: $altoCarusel;
+        width: 100%;
+        .carousel-item{
+            img{
+                margin-top: $altoImagen; 
+                width: 100%;
+            }
+        } 
+    }
+     
+}
+.carousel-fixed-item{
+    a{
+        width: 100%;
+        height: $anchoBoton;
+        background-color: $colorBoton;
+    }
+    
+}
+.botonCarousel{
+    height: $altoBoton;
+    background-color: $colorBoton
+}

@@ -1,18 +1,20 @@
-html{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-body{
-    height: 100vh;
-}
-.abajo{
-    margin-top:12vh; 
-}
-.carousel{
-    
+.carusel {
+  height: 60vh; }
+  .carusel .carousel {
     overflow: visible;
-    
-}
+    height: 60vh;
+    width: 100%; }
+    .carusel .carousel .carousel-item img {
+      margin-top: 4vh;
+      width: 100%; }
 
+.carousel-fixed-item a {
+  width: 100%;
+  height: 4vh;
+  background-color: #ffcc00; }
 
+.botonCarousel {
+  height: 10vh;
+  background-color: #ffcc00; }
+
+/*# sourceMappingURL=app.css.map */
