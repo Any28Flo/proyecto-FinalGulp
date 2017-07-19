@@ -19,6 +19,13 @@ var cambia = function(){
     var btnContinuar = document.getElementById("btnFormulario")
     
     $(btnContinuar).removeClass("disabled");
+    btnContinuar.addEventListener("click",metodoGet)
+}
+var metodoGet = function(){
+    var phoneNumeber =parseInt(document.getElementById("numeroTelefonico").value;)
+    
+    console.log(typeof(phoneNumeber));
+    console.log("Funcion en servicio")
 }
 var valida = function (){
     contador++;
