@@ -1,0 +1,1 @@
+$(".carousel.carousel-slider").carousel({fullWidth:!0});var saluda=function(){console.log("El js esta funcionando")};saluda();

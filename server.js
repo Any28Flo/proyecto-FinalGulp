@@ -17,6 +17,7 @@ const format = morganjson({
 
 app.use("/static", express.static(__dirname + '/node_modules'));
 app.use("/static", express.static(__dirname + '/public'));
+app.use("/static", express.static(__dirname + 'servPublic'));
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -32,7 +33,6 @@ router.get('/', (req, res) => {
 //Funcion para levantar el servidor
 app.get('/',function(req,res){
     res.sendFile(__dirname+'/index.html');
-    console.log("Levantando el servidor")
 })
 
 
