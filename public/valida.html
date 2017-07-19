@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="static/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="static/scss/app.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s6 offset-s3 valida">
+                <img src="static/img/icons/phone.png" class="responsive-img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s8 offset-s2 center">
+                <h1 class="flow-text"><strong>Para comenzar validaremos tu número</strong></h1>
+                <p class="grey-text">Recibirás un SMS con un código de validación </p>
+            </div>
+        </div>
+        <div class="row ">
+           <form action="#">
+              <div class="col s3 offset-s2 ">
+                  <img src="static/img/icons/phoneandnumber.png" class="responsive-img" >
+              </div>
+              <div class="col s6  " >
+                 <input id="numeroTelefonico">    
+              </div>
+                
+                <p class="center  numeroTelefonico">
+                  <input type="checkbox" id="checkBox"  />
+                  <label for="checkBox">Acepto los</label>
+                  <label id=condiciones>Términos y condiciones</label>
+                </p>
+           </form>
+            
+        </div>
+        <div class="row center">
+            <div class="col s8 offset-s2">
+                 <a id="btnFormulario" class="btn disabled">CONTINUAR</a>
+            </div>
+        </div>
+        
+        
+    
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="static/materialize-css/dist/js/materialize.min.js"></script>  
+    <script src="static/js/main.js"></script>
+</body>
+</html>

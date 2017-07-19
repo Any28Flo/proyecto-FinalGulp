@@ -8,8 +8,13 @@ $altoBoton :10vh;
 $anchoBoton:4vh;
 $colorBoton: #ffcc00;
 
-
-
+$tamanoImgValida: 50%;
+$colorCondiciones : #48ae96;
+.valida{
+    img{
+        margin-top: $altoImagen;
+    }
+}
 .carusel{
     height: $altoCarusel;
     .carousel{
@@ -37,3 +42,14 @@ $colorBoton: #ffcc00;
     height: $altoBoton;
     background-color: $colorBoton
 }
+.numeroTelefonico{
+    label{
+        font-size: .8rem;
+    }
+}
+
+#condiciones{
+    color: $colorCondiciones;
+    
+}
+

@@ -1,3 +1,6 @@
+.valida img {
+  margin-top: 4vh; }
+
 .carusel {
   height: 60vh; }
   .carusel .carousel {
@@ -16,5 +19,11 @@
 .botonCarousel {
   height: 10vh;
   background-color: #ffcc00; }
+
+.numeroTelefonico label {
+  font-size: .8rem; }
+
+#condiciones {
+  color: #48ae96; }
 
 /*# sourceMappingURL=app.css.map */

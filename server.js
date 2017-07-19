@@ -17,7 +17,7 @@ const format = morganjson({
 
 app.use("/static", express.static(__dirname + '/node_modules'));
 app.use("/static", express.static(__dirname + '/public'));
-app.use("/static", express.static(__dirname + 'servPublic'));
+app.use("/static", express.static(__dirname + '/servPublic'));
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -30,9 +30,10 @@ let router = express.Router();
 router.get('/', (req, res) => {
   res.json({ name: 'yape-api',version: "0.0.1"});
 });
+
 //Funcion para levantar el servidor
 app.get('/',function(req,res){
-    res.sendFile(__dirname+'/index.html');
+    res.sendFile(__dirname+'/public/index.html');
 })
 
 
