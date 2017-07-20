@@ -26,4 +26,9 @@
 #condiciones {
   color: #48ae96; }
 
+.reloj p {
+  display: inline-block; }
+.reloj img {
+  width: 7%; }
+
 /*# sourceMappingURL=app.css.map */

@@ -9,7 +9,9 @@ $anchoBoton:4vh;
 $colorBoton: #ffcc00;
 
 $tamanoImgValida: 50%;
+
 $colorCondiciones : #48ae96;
+$imgCodigo : 7%;
 .valida{
     img{
         margin-top: $altoImagen;
@@ -49,7 +51,15 @@ $colorCondiciones : #48ae96;
 }
 
 #condiciones{
-    color: $colorCondiciones;
-    
+    color: $colorCondiciones;    
 }
+.reloj{
+    p{
+        display: inline-block;
+    }
+    img{
+        width: $imgCodigo;    
+    }
+}
+
 
