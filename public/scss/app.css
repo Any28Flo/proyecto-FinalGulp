@@ -31,4 +31,9 @@
 .reloj img {
   width: 7%; }
 
+.bienvenida {
+  background-color: #ffcc00; }
+  .bienvenida img {
+    margin-top: 35vh; }
+
 /*# sourceMappingURL=app.css.map */

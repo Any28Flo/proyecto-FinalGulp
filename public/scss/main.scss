@@ -61,5 +61,10 @@ $imgCodigo : 7%;
         width: $imgCodigo;    
     }
 }
-
+.bienvenida{
+    img{
+        margin-top: 35vh;
+    }
+    background-color: $colorBoton;
+}
 
