@@ -48,7 +48,6 @@ var metodoPost = function(){
         "terms":true
     }).then(function (response){
         alert("Codigo: "+response.data.code);
-        console.log(response.data.phone)
         $("#telefono").innerHTML=response.data.phone;
         localStorage.setItem("telefono",response.data.phone);  
         localStorage.setItem("codigo",response.data.code);
@@ -165,16 +164,32 @@ var insertaUsuario = function (){
          console.log(response);
          
          sigPantalla();
-
-        alert("datos dados dados de alta")
+         alert("datos  de alta")
         
     })
    
     
 }
+var tarjetaPantalla = function(){
+          setTimeout(metodoSet,1000);
+
+          
+          
+}
+var metodoSet = function(){
+window.location.href = "../tarjeta.html";
+}
 var sigPantalla = function(){
       window.location.href = "../bienvenida.html";
-
+      setTimeout(tarjetaPantalla,1000)
+}
+var validaTarjeta = function(){
+    
+    var caracteres = $("#tarjeta").val();
+    if(caracteres.length >0 && caracteres.length <17){
+       return true;
+        
+    }
 }
 var cargaPagina = function(){
     funcionCarousel();
@@ -191,8 +206,7 @@ var cargaPagina = function(){
         e.preventDefault();
     })
     $("#registroUsuario").keypress(validaFormulario)
-       
-       
+    $("#tarjeta").keypress(validaTarjeta);
     
     
     
